@@ -52,11 +52,11 @@ export ENV=      # also production, because paranoia is a feature
 
 ## API Reference
 
-| Function | What it does | Lines of code it replaces |
+| Function | What it does | What it's basically doing |
 |---|---|---|
-| `Get()` | Returns `"prod"` or `"dev"` | `os.Getenv("ENV")` + a switch |
-| `IsProd()` | Returns `true` if prod | `os.Getenv("ENV") != "dev"` |
-| `IsDev()` | Returns `true` if dev | `os.Getenv("ENV") == "dev"` |
+| `Get()` | Returns `"prod"` or `"dev"` | `if os.Getenv("ENV") == "dev" { return "dev" } else { return "prod" }` |
+| `IsProd()` | Returns `true` if prod | `Get() == "prod"` |
+| `IsDev()` | Returns `true` if dev | `Get() == "dev"` |
 
 ## Constants
 
