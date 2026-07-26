@@ -10,6 +10,9 @@ jobs:
       dep_command: "make dep"
       lint_command: "make lint"
       test_command: "make test-coverage"
+      codecov_enabled: true
+    secrets:
+      codecov_token: ${{ secrets.CODECOV_TOKEN }}
 
   # Publish the agent skill (.agents/skills/) to ClawHub. Tag pushes ONLY,
   # after lint + tests pass.
