@@ -1,7 +1,10 @@
 # goenv
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/psyb0t/goenv.svg)](https://pkg.go.dev/github.com/psyb0t/goenv)
-[![CI](https://img.shields.io/github/actions/workflow/status/psyb0t/goenv/pipeline.yml?branch=main)](https://github.com/psyb0t/goenv/actions/workflows/pipeline.yml)
+[![CI](https://github.com/psyb0t/goenv/actions/workflows/pipeline.yml/badge.svg?branch=main)](https://github.com/psyb0t/goenv/actions/workflows/pipeline.yml)
+[![coverage](https://raw.githubusercontent.com/psyb0t/goenv/badges/coverage.svg)](https://github.com/psyb0t/goenv/actions/workflows/pipeline.yml)
+[![version](https://raw.githubusercontent.com/psyb0t/goenv/badges/version.svg)](https://github.com/psyb0t/goenv/tags)
+[![license](https://raw.githubusercontent.com/psyb0t/goenv/badges/license.svg)](LICENSE)
 
 The most over-engineered environment variable reader in the history of Go programming. A full-blown, battle-tested, enterprise-grade package that reads ONE environment variable and tells you if you're in prod or dev.
 

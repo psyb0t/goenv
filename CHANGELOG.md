@@ -2,6 +2,16 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v1.0.4 — 2026-07-27
+
+Self-hosted README badges.
+
+- **Coverage / version / license badges are self-rendered SVGs** served from
+  `raw.githubusercontent.com/psyb0t/goenv/badges/*.svg` — no third-party render
+  service. `make test-coverage` writes the percentage to `coverage-percent.txt`,
+  the pipeline uploads it, and a `badges` job bakes it into the SVG. The CI badge
+  is switched to GitHub's native `badge.svg`. No library code changed.
+
 ## v1.0.3 — 2026-07-26
 
 README badges.
