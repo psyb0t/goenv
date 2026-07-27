@@ -2,6 +2,15 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v1.0.5 — 2026-07-27
+
+Go 1.26 + lint tooling.
+
+- Bumped the `go` directive to 1.26 (`go.mod` + CI).
+- `make lint` now runs Go 1.26's built-in `go fix -diff` (read-only check)
+  alongside `go vet`, and a `make lint-fix` target was added to apply fixes. No
+  library code changed.
+
 ## v1.0.4 — 2026-07-27
 
 Self-hosted README badges.

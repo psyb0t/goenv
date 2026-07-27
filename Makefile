@@ -8,6 +8,17 @@ dep: ## Get project dependencies
 
 lint: ## Lint all Golang files
 	@echo "Linting all Go files..."
+	@out=$$(go fix -diff ./... 2>&1); \
+	if [ -n "$$out" ]; then \
+		echo "$$out"; \
+		echo "go fix found issues. Run 'make lint-fix' to apply."; \
+		exit 1; \
+	fi
+	@go vet ./...
+
+lint-fix: ## Lint all Golang files and fix
+	@echo "Linting and fixing all Go files..."
+	@go fix ./...
 	@go vet ./...
 
 test: ## Run all tests
