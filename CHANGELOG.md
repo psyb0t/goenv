@@ -2,6 +2,16 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v1.0.6 — 2026-07-27
+
+Agent-plugin manifests.
+
+- Added `.agents/.claude-plugin/plugin.json` and `.agents/.codex-plugin/plugin.json` so
+  the existing `.agents/skills/goenv/` skill installs natively as a plugin in Claude Code
+  and Codex, rooted at `.agents/` with `skills: "./skills/"`.
+- Added a `## Agent integrations` README section with the `claude plugin` / `codex plugin`
+  / `openclaw skills install` commands. No library code changed.
+
 ## v1.0.5 — 2026-07-27
 
 Go 1.26 + lint tooling.

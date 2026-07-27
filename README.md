@@ -72,6 +72,33 @@ export ENV=      # also production, because paranoia is a feature
 | `Prod` | `"prod"` | None |
 | `Dev` | `"dev"` | None |
 
+## Agent integrations
+
+The [skill](.agents/skills/goenv) works in any agent that reads `.agents/skills/`, and installs natively in the clients below.
+
+### Claude Code
+
+```bash
+claude plugin marketplace add psyb0t/agents
+claude plugin install goenv@psyb0t
+```
+
+### Codex
+
+```bash
+codex plugin marketplace add psyb0t/agents
+```
+
+Codex also picks the skill up automatically in any repo containing `.agents/skills/`, and invokes it as `$goenv`.
+
+### OpenClaw
+
+The skill is published to ClawHub on every release:
+
+```bash
+openclaw skills install @psyb0t/goenv
+```
+
 ## FAQ
 
 **Q: Do I really need a package for this?**
