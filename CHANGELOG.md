@@ -2,6 +2,19 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v1.0.7 — 2026-07-27
+
+Codex install command.
+
+- The `### Codex` subsection under `## Agent integrations` was missing its
+  install command — it told readers to add the marketplace and stopped
+  there. Added `codex plugin add goenv@psyb0t` right after the
+  `codex plugin marketplace add psyb0t/agents` line.
+- Clarified the two distinct invocation forms: installed via the
+  marketplace the skill invokes as `$goenv:goenv`; picked up automatically
+  from a repo's own `.agents/skills/` (no install) it invokes as plain
+  `$goenv`. No library code changed.
+
 ## v1.0.6 — 2026-07-27
 
 Agent-plugin manifests.

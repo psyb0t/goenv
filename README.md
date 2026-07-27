@@ -87,9 +87,12 @@ claude plugin install goenv@psyb0t
 
 ```bash
 codex plugin marketplace add psyb0t/agents
+codex plugin add goenv@psyb0t
 ```
 
-Codex also picks the skill up automatically in any repo containing `.agents/skills/`, and invokes it as `$goenv`.
+Installed via the marketplace, the skill invokes as `$goenv:goenv`. Codex also
+picks the skill up automatically, with no install, in any repo containing
+`.agents/skills/` — there it invokes as plain `$goenv`.
 
 ### OpenClaw
 

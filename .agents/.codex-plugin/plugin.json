@@ -1,6 +1,6 @@
 {
   "name": "goenv",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Go library that reads the ENV environment variable and reports whether the process is running in prod or dev, defaulting to prod when ENV is unset or anything other than the literal \"dev\".",
   "author": { "name": "psyb0t", "url": "https://github.com/psyb0t" },
   "homepage": "https://github.com/psyb0t/goenv",
