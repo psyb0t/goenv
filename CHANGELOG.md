@@ -2,6 +2,15 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v1.0.10 — 2026-08-08
+
+Documentation. No code change.
+
+- The README's surface summary said "three functions and three constants" and
+  omitted the exported `Type`. It is four things, not six: `Get`, `IsDev`,
+  `IsProd`; `EnvVarName`, `Prod`, `Dev`; and `type Type = string`, which is what
+  the constants are typed as.
+
 ## v1.0.9 — 2026-08-08
 
 Repository infrastructure only. No library code changed.
