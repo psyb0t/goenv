@@ -3,4 +3,5 @@ coverage.*
 CLAUDE.md
 .telemetry/
 git-update.sh
+git-update.sh.debot
 coverage-percent.txt
