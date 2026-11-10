@@ -71,7 +71,12 @@ make test-coverage   # race tests with coverage, writes coverage-percent.txt, fa
 make docs            # build the docs site into .testing/docs-site with GitHub's Jekyll image
 ```
 
-`make docs` needs Docker. What to check in the built site is in `.agents/rules/docs-and-releases.md`.
+`make docs` needs Docker.
+
+## Docs and releases
+
+- **DOC4:** After a docs change, run `make docs` and check the output in `.testing/docs-site`.
+- **DOC6:** A tag push does not rerun the checks: the pipeline waits for that commit's `main` run, then cuts the GitHub release and publishes the skill. There is no version file.
 
 ## Rules
 
